@@ -1,0 +1,64 @@
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
+@import "~@edx/brand/paragon/fonts";
+@import "~@edx/brand/paragon/variables";
+@import "~@edx/paragon/scss/core/core";
+@import "~@edx/brand/paragon/overrides";
+@import "~@edx/frontend-component-header/dist/index";
+@import "~@edx/frontend-component-footer/dist/footer";
+
+@import "./account-settings/style";
+@import "./id-verification/id-verification";
+
+.word-break-all {
+  word-break: break-all !important;
+}
+
+// TODO: Update edx-bootstrap theme to incorporate these edits.
+.btn, a.btn {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.btn-link {
+  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  & > main {
+    flex-grow: 1;
+  }
+}
+
+.coaching-header {
+  .logo {
+    display: block;
+    box-sizing: content-box;
+    height: 1.75rem;
+    padding: .75rem 0;
+  }
+}
+
+.coaching-consent {
+  .disclaimer {
+    font-size: 	0.75rem;
+  }
+}
+
+.checkboxOption {
+  input:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+
+  label {
+    font-weight: normal;
+  }
+}

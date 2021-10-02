@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "patch": {
+    "automerge": true
+  },
+  "rebaseStalePrs": true,
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^@edx/paragon"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
+      "stabilityDays": 3
+    }
+  ]
+}
